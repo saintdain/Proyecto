@@ -1,0 +1,50 @@
+<Html>
+<head>
+<title>
+Código
+</Title>
+</Head>
+<Body>
+<style> 
+Body {background-color:black;
+}
+</style>
+
+<center><Table></center> 
+<TD bgcolor="black" width="5%"> <center> <a href="file:///H:/Pagina%20web/Pagina%20web/index.html" "target="_blank"> <img src="H:\Pagina web\IMAGENES\Logo.png"  width="150"  height="150" align="left"> </TD> </center>
+<TD width="90%" bgcolor="black"> <center> <font size=7> <font color="white"> RIEGO AUTOMÁTICO PARA LECHUGAS </font> </font> </center>
+<br>
+<center> <a href="H:\Pagina web\Pagina web\index.html"><button>Inicio </button> <a/>
+<a href="H:\Pagina web\Pagina web\Video.html"><button>Videos</button><a/> 
+<a href="H:\Pagina web\Pagina web\blog.html"><button>Blog</button><a/> 
+<a href="H:\Pagina web\Pagina web\CODIGO.html"> <button>Codigo </button><a/> </center> </TD> <center> <a href="H:\Pagina web\Pagina web\index.html"
+<TD bgcolor="white" width="5%"> <center> <a href="https://static.wikia.nocookie.net/9dd4de6e-5309-4bc1-8f73-eda04d900047/scale-to-width/755" target="_blank"> <img src="H:\Pagina web\IMAGENES\cnb.png"  width="150"  height="150" align="right"> </center> </TD>  
+<tr>
+<td>	
+<td bgcolor="black"> <br> <br> <center> <h1> <font color="white"> <font size=7> Código </font> </h1> <br> <br> 
+<h3> int DatosHumedad; </h3>
+<h3> int Bomba = 2; </h3> 
+<h3> void setup() { </h3>
+<h3> <Serial.begin (9600); </h3>
+<h3> pinMode(Bomba, OUTPUT); </h3>
+<h3> pinMode(6,OUTPUT); </h3>
+<h3> } </h3>
+<h3> void loop() </h3> 
+<h3> { </h3>
+   <h3> Serial.println (DatosHumedad); </h3>
+
+ 
+<h3> DatosHumedad = analogRead (A0); </h3>
+<h3> if (DatosHumedad >= 650 && DatosHumedad <= 1024) </h3> 
+<h3> { </h3>
+<h3> digitalWrite(Bomba,LOW); } </h3>
+<h3> else { </h3>
+<h3> digitalWrite(Bomba,HIGH); </h3>
+<h3> } </h3>
+  
+
+<h3> } </h3>
+<center> </h1> <font color="white">
+
+</Body>
+</HTML>
